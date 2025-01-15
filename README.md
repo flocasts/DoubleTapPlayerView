@@ -3,7 +3,7 @@
 A simple library to include double tap behavior to ExoPlayer's PlayerView. 
 Created to handle fast forward/rewind behavior like YouTube.
 
-This is a fork of the original repository vkay94/DoubleTapPlayerView, with added support for Media3.
+This is a fork of the original repository [vkay94/DoubleTapPlayerView](https://github.com/vkay94/DoubleTapPlayerView), with added support for Media3.
 
 ![teamwork-flip](github/preview_gif.gif)
 
