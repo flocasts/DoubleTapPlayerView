@@ -10,14 +10,14 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 import androidx.core.view.GestureDetectorCompat
-import com.google.android.exoplayer2.ui.PlayerView
+import androidx.media3.ui.PlayerView
 
 /**
  * Custom player class for Double-Tapping listening
  */
 open class DoubleTapPlayerView @JvmOverloads constructor(
-    context: Context?, attrs: AttributeSet? = null, defStyleAttr: Int = 0
-) : PlayerView(context!!, attrs, defStyleAttr) {
+    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+) : PlayerView(context, attrs, defStyleAttr) {
 
     private val gestureDetector: GestureDetectorCompat
     private val gestureListener: DoubleTapGestureListener = DoubleTapGestureListener(rootView)
@@ -36,10 +36,10 @@ open class DoubleTapPlayerView @JvmOverloads constructor(
 
         // Check whether controller is set through XML
         attrs?.let {
-            val a = context?.obtainStyledAttributes(attrs, R.styleable.DoubleTapPlayerView, 0,0)
-            controllerRef = a?.getResourceId(R.styleable.DoubleTapPlayerView_dtpv_controller, -1) ?: -1
+            val a = context.obtainStyledAttributes(attrs, R.styleable.DoubleTapPlayerView, 0,0)
+            controllerRef = a.getResourceId(R.styleable.DoubleTapPlayerView_dtpv_controller, -1) ?: -1
 
-            a?.recycle()
+            a.recycle()
         }
     }
 

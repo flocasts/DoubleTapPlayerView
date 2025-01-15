@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.ViewModelProvider
+import androidx.media3.common.util.UnstableApi
 import com.github.vkay94.doubletapplayerviewexample.databinding.ActivityMainBinding
 import com.github.vkay94.doubletapplayerviewexample.databinding.ExoPlaybackControlViewYtBinding
 import com.github.vkay94.doubletapplayerviewexample.fragments.PageViewModel
@@ -18,6 +19,7 @@ import com.github.vkay94.doubletapplayerviewexample.fragments.SectionsPagerAdapt
 import com.github.vkay94.doubletapplayerviewexample.fragments.ShapeFragment
 import com.github.vkay94.dtpv.youtube.YouTubeOverlay
 
+@UnstableApi
 class MainActivity : BaseVideoActivity() {
 
     private var isVideoFullscreen = false
