@@ -44,7 +44,7 @@ android {
 }
 
 dependencies {
-  implementation 'com.github.vkay94:DoubleTapPlayerView:1.0.4'
+  implementation 'com.github.flocasts:DoubleTapPlayerView:v1.0.4-fork.1'
 }
 ```
 
